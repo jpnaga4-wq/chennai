@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chennai Groups | Premium Signage, Branding & Outdoor Advertising</title>
+  <meta name="description" content="Chennai Groups provides signage, LED boards, ACP signage, metal sign boards, printing, branding and outdoor advertising solutions in Chennai." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+      </div>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+         
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="nav-cta">Call Now  ↗</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="mobile-cta">Get a Quote ↗</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SLIDER -->
+    <section id="hero" class="hero-section" aria-label="Hero carousel">
+      <div class="hero-slider">
+        <div class="hero-track"></div>
+        <!-- Progress bar -->
+        <div class="hero-progress">
+          <div class="progress-bar"></div>
+        </div>
+        <!-- controls -->
+        <div class="hero-controls">
+          <div class="hero-info">
+            <span class="hero-location">01<br />Chennai, Tamil Nadu<br />Visual branding partner</span>
+          </div>
+          <div class="hero-nav">
+            <button class="slide-prev" aria-label="Previous slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <div class="slide-indicators"></div>
+            <button class="slide-next" aria-label="Next slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+<script>
+  let currentSlide = 0;
+let autoSlideInterval;
+const slideDuration = 5000; // 5 seconds
+
+function showSlide(index) {
+  const slides = document.querySelectorAll(".hero-slide");
+
+  if (!slides.length) return;
+
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === currentSlide);
+  });
+
+  updateIndicators();
+  resetProgressBar();
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+function startAutoSlide() {
+  clearInterval(autoSlideInterval);
+
+  autoSlideInterval = setInterval(() => {
+    nextSlide();
+  }, slideDuration);
+}
+
+function resetAutoSlide() {
+  startAutoSlide();
+}
+
+function resetProgressBar() {
+  const progressBar = document.querySelector(".progress-bar");
+
+  if (!progressBar) return;
+
+  progressBar.style.animation = "none";
+  progressBar.offsetHeight; // Restart animation
+  progressBar.style.animation = `heroProgress ${slideDuration}ms linear forwards`;
+}
+
+// Next button
+document.querySelector(".slide-next")?.addEventListener("click", () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+// Previous button
+document.querySelector(".slide-prev")?.addEventListener("click", () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Start carousel
+showSlide(0);
+startAutoSlide();
+</script>
+ <style>
+  .progress-bar {
+  width: 0%;
+  height: 100%;
+  animation: heroProgress 5s linear forwards;
+}
+
+@keyframes heroProgress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+.nav-cta {
+    margin-left: 120px;
+}
+ </style>
+    <!-- ABOUT / INTRO -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image animate-on-scroll">
+          <img src="abou.png" alt="Chennai Groups professional signage team" loading="lazy" />
+          <div class="image-reveal"></div>
+        </div>
+        <div class="about-content animate-on-scroll delay-1">
+          <span class="eyebrow">CHENNAI GROUPS</span>
+          <h2>Advertising that gets<br /> <span class="highlight-italic">noticed.</span>.</h2>
+          <p>From large-format hoardings and LED boards to backlit displays, flex boards, sign boards and customized advertising structures, we create complete outdoor advertising solutions built around your brand.</p>
+          <div class="feature-list">
+            <div class="feature-item animate-on-scroll delay-1">
+              <span class="feature-num">01</span>
+              <div>
+                <strong>Quality manufacturing</strong>
+                <p>Premium materials, precise fabrication and professional finishing.</p>
+              </div>
+            </div>
+            <div class="feature-item animate-on-scroll delay-2">
+              <span class="feature-num">02</span>
+              <div>
+                <strong>Creative advertising</strong>
+                <p>Distinctive designs and impactful visual solutions tailored to your brand.</p>
+              </div>
+            </div>
+            <div class="feature-item animate-on-scroll delay-3">
+              <span class="feature-num">03</span>
+              <div>
+                <strong>Complete execution</strong>
+                <p>From design and manufacturing to installation, we deliver seamless end-to-end service.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">WHAT WE MAKE</span>
+          <h2>Built to be seen.<br />Built to last.</h2>
+          <p class="section-sub">One partner for signage, printing, branding and outdoor visibility.</p>
+        </div>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION: WHY CHOOSE US -->
+    <section class="section why-choose-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">WHY CHOOSE US</span>
+          <h2>We don't just build signs.<br />We build <span class="highlight-italic">landmarks</span>.</h2>
+          <p class="section-sub">Every project is a statement. Here's why businesses trust Chennai Groups.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card animate-on-scroll">
+            <div class="why-icon">🏆</div>
+            <h3>10+ Years of Excellence</h3>
+            <p>Proven track record of delivering premium signage solutions across Tamil Nadu.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-1">
+            <div class="why-icon">🎯</div>
+            <h3>End-to-End Solutions</h3>
+            <p>From design and manufacturing to installation — we handle everything.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-2">
+            <div class="why-icon">⚡</div>
+            <h3>Quality Materials</h3>
+            <p>Premium-grade materials ensuring durability and visual impact.</p>
+          </div>
+          <div class="why-card animate-on-scroll delay-3">
+            <div class="why-icon">🤝</div>
+            <h3>Client-First Approach</h3>
+            <p>We work closely with you to bring your vision to life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION: INDUSTRIES WE SERVE -->
+    <section class="section industries-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">INDUSTRIES WE SERVE</span>
+          <h2>We speak every <span class="highlight-italic">industry's</span> language.</h2>
+          <p class="section-sub">From retail to real estate, our signage solutions work across sectors.</p>
+        </div>
+        <div class="industries-grid">
+          <div class="industry-item animate-on-scroll">
+            <div class="industry-icon">🏬</div>
+            <span>Retail & Shopping</span>
+          </div>
+          <div class="industry-item animate-on-scroll delay-1">
+            <div class="industry-icon">🏢</div>
+            <span>Real Estate</span>
+          </div>
+          <div class="industry-item animate-on-scroll delay-2">
+            <div class="industry-icon">🍽️</div>
+            <span>Hospitality</span>
+          </div>
+          <div class="industry-item animate-on-scroll delay-3">
+            <div class="industry-icon">🏥</div>
+            <span>Healthcare</span>
+          </div>
+          <div class="industry-item animate-on-scroll delay-4">
+            <div class="industry-icon">📚</div>
+            <span>Education</span>
+          </div>
+          <div class="industry-item animate-on-scroll delay-5">
+            <div class="industry-icon">🏭</div>
+            <span>Corporate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR WORK / GALLERY -->
+    <section id="work" class="section work-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">GALLERY</span>
+          <h2>Make the first impression <span class="highlight-italic">count</span>.</h2>
+          <p class="section-sub">Our recent projects showcase the quality and creativity we bring to every installation.</p>
+        </div>
+        <div class="work-grid">
+          <div class="work-item animate-on-scroll"><img src="Backlit-1.jpg" alt="Commercial signage project" loading="lazy" /></div>
+          <div class="work-item tall animate-on-scroll delay-1"><img src="costom-1.jpg" alt="Outdoor branding installation" loading="lazy" /></div>
+          <div class="work-item animate-on-scroll delay-2"><img src="flex-2.JPG" alt="LED signage and printing" loading="lazy" /></div>
+          <div class="work-item animate-on-scroll delay-3"><img src="hoarding-1.jpg" alt="Premium signage" loading="lazy" /></div>
+          <div class="work-item tall animate-on-scroll delay-4"><img src="led-1.jpg" alt="Branding project" loading="lazy" /></div>
+          <div class="work-item animate-on-scroll delay-5"><img src="led-7.jpg" alt="Outdoor advertising" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats-section">
+      <div class="container stats-grid">
+        <div class="animate-on-scroll"><span class="stat-number" data-count="10">0</span><span class="stat-label">Years experience</span></div>
+        <div class="animate-on-scroll delay-1"><span class="stat-number" data-count="500">0</span><span class="stat-label">Projects completed</span></div>
+        <div class="animate-on-scroll delay-2"><span class="stat-number" data-count="100">0</span><span class="stat-label">Happy clients</span></div>
+        <div class="animate-on-scroll delay-3"><span class="stat-number" data-count="24">0</span><span class="stat-label">Creative support</span></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">OUR METHOD</span>
+          <h2>From idea to <span class="highlight-italic">installation</span>.</h2>
+        </div>
+        <div class="process-grid" id="process-grid"></div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION: TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">TESTIMONIALS</span>
+          <h2>What our clients <span class="highlight-italic">say</span>.</h2>
+          <p class="section-sub">Real feedback from real businesses who trusted us with their visual identity.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Chennai Groups transformed our storefront. The LED signage is stunning and has significantly increased foot traffic."</p>
+            <div class="testimonial-author">
+              <strong>Rajesh Kumar</strong>
+              <span>Retail Store Owner</span>
+            </div>
+          </div>
+          <div class="testimonial-card animate-on-scroll delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Professional, creative, and reliable. They delivered our corporate branding project on time and exceeded expectations."</p>
+            <div class="testimonial-author">
+              <strong>Priya Sharma</strong>
+              <span>Marketing Director</span>
+            </div>
+          </div>
+          <div class="testimonial-card animate-on-scroll delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"The hoarding installation was flawless. Our brand visibility has improved dramatically since working with them."</p>
+            <div class="testimonial-author">
+              <strong>Suresh Menon</strong>
+              <span>Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION: FAQ -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions? We have <span class="highlight-italic">answers</span>.</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item animate-on-scroll">
+            <div class="faq-question">
+              <span>What types of signage do you offer?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>We offer LED boards, ACP signage, hoardings, metal sign boards, 3D lettering, and custom branding solutions.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll delay-1">
+            <div class="faq-question">
+              <span>Do you handle installation?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we provide professional installation services for all our signage projects.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll delay-2">
+            <div class="faq-question">
+              <span>How long does a typical project take?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Project timelines vary, but most signage projects are completed within 2-4 weeks.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll delay-3">
+            <div class="faq-question">
+              <span>Do you offer maintenance services?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we provide ongoing maintenance and repair services for all our installations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / QUOTE -->
+  <section id="contact" class="section contact-section">
+  <div class="container contact-grid">
+    <div class="contact-info animate-on-scroll">
+      <span class="eyebrow">START A PROJECT</span>
+      <h2>Let's build your <span class="highlight-italic">next landmark</span>.</h2>
+      <p>Share your requirement and we'll shape the right direction.</p>
+      <div class="contact-detail"><strong>EMAIL</strong><br />chennaigroups.che@gmail.com</div>
+      <div class="contact-detail"><strong>LOCATION</strong><br />83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</div>
+      <div class="contact-detail"><strong>BUSINESS HOURS</strong><br />Monday – Saturday · 9:00 AM – 7:00 PM</div>
+    </div>
+    <div class="contact-form animate-on-scroll delay-1">
+      <form id="quote-form" novalidate>
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="company" placeholder="Company" />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <select name="service" required>
+          <option value="">Choose a service</option>
+          <option>LED Boards</option><option>ACP Signage</option><option>Hoardings</option>
+          <option>Printing Work</option><option>Branding</option><option>Creative Jobs</option><option>Metal Sign Boards</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about size, location and timeline..." required></textarea>
+        <button type="submit" class="btn-primary">Send Enquiry ↗</button>
+        <div class="form-success hidden">Thanks — your enquiry has been captured. We'll get back to you shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    const form = document.getElementById('quote-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Basic validation
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Collect values
+      const name = form.querySelector('[name="name"]').value.trim();
+      const company = form.querySelector('[name="company"]').value.trim() || '—';
+      const phone = form.querySelector('[name="phone"]').value.trim();
+      const email = form.querySelector('[name="email"]').value.trim();
+      const serviceSelect = form.querySelector('[name="service"]');
+      const service = serviceSelect.value || '—';
+      const message = form.querySelector('[name="message"]').value.trim();
+
+      // Build WhatsApp message
+      const whatsappNumber = '919884600472'; // +91 98846 00472 without plus
+      const text = 
+        `*New Enquiry from Chennai Groups Website*%0A%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Company:* ${encodeURIComponent(company)}%0A` +
+        `*Phone:* ${encodeURIComponent(phone)}%0A` +
+        `*Email:* ${encodeURIComponent(email)}%0A` +
+        `*Service:* ${encodeURIComponent(service)}%0A` +
+        `*Message:* ${encodeURIComponent(message)}`;
+
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+      // Open WhatsApp in a new tab
+      window.open(whatsappURL, '_blank');
+
+      // Show success message
+      const successDiv = form.querySelector('.form-success');
+      if (successDiv) {
+        successDiv.classList.remove('hidden');
+        successDiv.style.display = 'block';
+      }
+
+      // Optionally reset the form
+      form.reset();
+
+      // Hide success after 5 seconds
+      setTimeout(() => {
+        if (successDiv) {
+          successDiv.classList.add('hidden');
+          successDiv.style.display = 'none';
+        }
+      }, 5000);
+    });
+  })();
+</script>
+
+    <!-- UNIQUE SECTION: BLOG / LATEST NEWS -->
+    <!-- <section class="section blog-section">
+      <div class="container">
+        <div class="section-head animate-on-scroll">
+          <span class="eyebrow">LATEST UPDATES</span>
+          <h2>Insights from the <span class="highlight-italic">world</span> of signage.</h2>
+          <p class="section-sub">Stay informed about the latest trends in branding and outdoor advertising.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card animate-on-scroll">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1564663459736-6b6da08a9c19?w=600&h=400&fit=crop" alt="Blog post" loading="lazy" />
+            </div>
+            <div class="blog-content">
+              <span class="blog-tag">Trends</span>
+              <h3>The Future of LED Signage in 2026</h3>
+              <p>Discover how LED technology is transforming outdoor advertising.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll delay-1">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1586705124865-248fdda610a1?w=600&h=400&fit=crop" alt="Blog post" loading="lazy" />
+            </div>
+            <div class="blog-content">
+              <span class="blog-tag">Tips</span>
+              <h3>5 Tips for Choosing the Right Signage</h3>
+              <p>Make informed decisions for your business's visual identity.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll delay-2">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop" alt="Blog post" loading="lazy" />
+            </div>
+            <div class="blog-content">
+              <span class="blog-tag">Case Study</span>
+              <h3>How We Transformed a Retail Brand</h3>
+              <p>See how our signage solutions boosted foot traffic by 40%.</p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+          </div>
+          <p class="footer-tagline">Signage • Branding • Printing • Outdoor Advertising</p>
+          <p class="footer-desc">Premium visual branding solutions for businesses that demand excellence.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Hoardings</a></li>
+            <li><a href="services.html">LED Boards</a></li>
+            <li><a href="services.html">Backlit Boards</a></li>
+            <li><a href="services.html">Flex Boards</a></li>
+            <li><a href="services.html">Sign Boards</a></li>
+            <li><a href="services.html">Customized Structures</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><strong>Email:</strong> chennaigroups.che@gmail.com</p>
+          <p><strong>Location:</strong> C83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</p>
+          <p><strong>Hours:</strong> Mon-Sat 9AM-7PM</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/19DY2N3MiR/" aria-label="Facebook">📘</a>
+            <a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" aria-label="Instagram">📸</a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Chennai Groups. All rights reserved.</p>
+        <p class="footer-legal">Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/919884600472" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="tel:919884600472" class="float-call" aria-label="Call">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+  </a>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="home.js"></script>
+</body>
+</html>

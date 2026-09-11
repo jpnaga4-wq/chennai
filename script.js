@@ -1,0 +1,3 @@
+const menu=document.querySelector('.menu'),nav=document.querySelector('.header nav');menu?.addEventListener('click',()=>{nav.classList.toggle('open');menu.textContent=nav.classList.contains('open')?'×':'☰'});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+window.addEventListener('scroll',()=>document.querySelector('.header')?.classList.toggle('scrolled',scrollY>30));
+const form=document.querySelector('#form'),success=document.querySelector('#success');form?.addEventListener('submit',e=>{e.preventDefault();if(!form.checkValidity()){form.reportValidity();return}success.classList.add('show');form.reset();});

@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Chennai Groups - Outdoor Advertising Solutions</title>
+  <meta name="description" content="Contact Chennai Groups for premium outdoor advertising solutions including Hoardings, LED Boards, Backlit Boards, Flex Boards, Sign Boards, and Customized Structures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --orange: #FF5A1F;
+      --orange-secondary: #FF8A4C;
+      --black: #090909;
+      --dark: #101010;
+      --warm-offwhite: #F7F5F0;
+      --muted-gray: #707070;
+      --white: #FFFFFF;
+      --transition-smooth: cubic-bezier(.22, 1, .36, 1);
+      --transition-premium: cubic-bezier(0.65, 0, 0.35, 1);
+      --header-height: 84px;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--warm-offwhite);
+      color: var(--black);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-top: var(--header-height);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+    ============================================ */
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: inline-block;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .eyebrow::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 72px);
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 52px);
+      margin-bottom: 16px;
+    }
+
+    h2 .highlight-italic,
+    h1 .highlight-italic {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--orange);
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: var(--muted-gray);
+      max-width: 600px;
+    }
+
+    .section-head {
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      margin-bottom: 8px;
+    }
+
+    /* ============================================
+       HEADER STYLES
+    ============================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+      background: white;
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    }
+.hamburger .line {
+  background: #000 !important;
+  border-color: #000 !important;
+}
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo img {
+      height: 85px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-desktop ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin: 0;
+    }
+
+    .nav-desktop a {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding: 4px 0;
+      transition: color 0.3s;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+
+    .nav-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--orange);
+      transition: width 0.4s var(--transition-premium);
+    }
+
+    .nav-desktop a:hover::after,
+    .nav-desktop a.active::after {
+      width: 100%;
+    }
+
+    .nav-desktop a.active {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      padding: 8px 22px !important;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.4s var(--transition-premium);
+    }
+
+    .nav-cta:hover {
+      background: var(--orange-secondary);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(255, 90, 31, 0.4);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1001;
+    }
+
+    .hamburger .line {
+      width: 28px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.4s var(--transition-premium);
+      transform-origin: center;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active .line:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .hamburger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: var(--black);
+      z-index: 999;
+      transition: right 0.6s var(--transition-premium);
+      overflow-y: auto;
+      padding-top: 100px;
+    }
+
+    .mobile-menu.open {
+      right: 0;
+    }
+
+    .mobile-menu-inner ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      padding: 40px 24px;
+    }
+
+    .mobile-menu-inner a {
+      color: var(--white);
+      font-size: 24px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .mobile-menu-inner a:hover {
+      color: var(--orange);
+    }
+
+    .mobile-cta {
+      background: var(--orange);
+      padding: 12px 32px !important;
+      border-radius: 30px;
+      font-size: 20px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .nav-desktop {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* ============================================
+       CONTACT BANNER
+    ============================================ */
+    .contact-banner {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+
+    .contact-banner-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .contact-banner-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+      animation: bannerZoom 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes bannerZoom {
+      0% { transform: scale(1.05); }
+      100% { transform: scale(1.15); }
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(9, 9, 9, 0.85) 0%, rgba(9, 9, 9, 0.4) 60%, rgba(9, 9, 9, 0.2) 100%);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      padding: 80px 40px 60px;
+      width: 100%;
+    }
+
+    .banner-text {
+      opacity: 0;
+      transform: translateY(60px) scale(0.95);
+      animation: comingUp 1.2s var(--transition-premium) 0.3s forwards;
+    }
+
+    @keyframes comingUp {
+      0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .banner-text h1 {
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .banner-text p {
+      font-size: clamp(16px, 1.5vw, 24px);
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 600px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: comingUp 0.8s var(--transition-premium) 0.2s forwards;
+    }
+
+    .breadcrumb a {
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--orange);
+    }
+
+    .breadcrumb-separator {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .breadcrumb-current {
+      color: var(--orange);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .contact-banner {
+        min-height: 40vh;
+      }
+      .banner-content {
+        padding: 60px 24px 40px;
+      }
+      .banner-text h1 {
+        font-size: clamp(28px, 6vw, 40px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-banner {
+        min-height: 35vh;
+      }
+      .banner-content {
+        padding: 50px 16px 30px;
+      }
+    }
+
+    /* ============================================
+       CONTACT SECTION
+    ============================================ */
+    .contact-page-section {
+      padding: 80px 0;
+      background: var(--warm-offwhite);
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    /* ============================================
+       CONTACT INFO
+    ============================================ */
+    .contact-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .contact-info-wrapper h2 {
+      margin-bottom: 8px;
+    }
+
+    .contact-info-wrapper > p {
+      color: var(--muted-gray);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .contact-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: var(--white);
+      padding: 24px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      transition: all 0.4s var(--transition-premium);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      border-color: var(--orange);
+    }
+
+    .contact-card .icon {
+      font-size: 28px;
+      color: var(--orange);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .contact-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 4px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: var(--muted-gray);
+      line-height: 1.5;
+    }
+
+    .contact-card a {
+      color: var(--muted-gray);
+      transition: color 0.3s;
+    }
+
+    .contact-card a:hover {
+      color: var(--orange);
+    }
+
+    /* ============================================
+       BUSINESS HOURS
+    ============================================ */
+    .business-hours {
+      background: var(--white);
+      padding: 24px 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .business-hours h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .business-hours h4 i {
+      color: var(--orange);
+    }
+
+    .business-hours .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .business-hours .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .business-hours .hours-row .day {
+      color: var(--black);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .business-hours .hours-row .time {
+      color: var(--muted-gray);
+      font-size: 14px;
+    }
+
+    .business-hours .hours-row .time.closed {
+      color: #e53935;
+      font-weight: 600;
+    }
+
+    /* ============================================
+       SOCIAL LINKS
+    ============================================ */
+    .social-links-section {
+      background: var(--white);
+      padding: 24px 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .social-links-section h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 12px;
+    }
+
+    .social-links-section .social-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-links-section .social-icons a {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--warm-offwhite);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--muted-gray);
+      transition: all 0.4s var(--transition-premium);
+    }
+
+    .social-links-section .social-icons a:hover {
+      background: var(--orange);
+      color: var(--white);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.3);
+    }
+
+    /* ============================================
+       CONTACT FORM
+    ============================================ */
+    .contact-form-wrapper {
+      background: var(--white);
+      padding: 40px 44px;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .contact-form-wrapper h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrapper > p {
+      color: var(--muted-gray);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 4px;
+    }
+
+    .form-group label .required {
+      color: #e53935;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid #e5e5e5;
+      border-radius: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      transition: all 0.4s var(--transition-premium);
+      background: var(--warm-offwhite);
+      color: var(--black);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 4px rgba(255, 90, 31, 0.08);
+      background: var(--white);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #b0b0b0;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.4s var(--transition-premium);
+      font-family: 'Manrope', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-submit:hover {
+      background: var(--orange-secondary);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(255, 90, 31, 0.4);
+    }
+
+    .form-success {
+      margin-top: 16px;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      color: #2e7d32;
+      border-radius: 12px;
+      font-size: 14px;
+      border-left: 4px solid #2e7d32;
+      display: none;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    .form-error {
+      margin-top: 16px;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #ffebee, #ffcdd2);
+      color: #c62828;
+      border-radius: 12px;
+      font-size: 14px;
+      border-left: 4px solid #c62828;
+      display: none;
+    }
+
+    .form-error.show {
+      display: block;
+    }
+
+    /* ============================================
+       MAP SECTION
+    ============================================ */
+    .map-section {
+      padding: 0 0 80px;
+      background: var(--warm-offwhite);
+    }
+
+    .map-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      display: block;
+      border: none;
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .site-footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 60px 0 0;
+      position: relative;
+    }
+
+    .site-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--orange), transparent);
+      opacity: 0.3;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-brand .footer-logo img {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: var(--orange);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .footer-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 320px;
+      line-height: 1.7;
+    }
+
+    .footer-links h4,
+    .footer-services h4,
+    .footer-contact h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-links ul,
+    .footer-services ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links ul li a,
+    .footer-services ul li {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .footer-links ul li a:hover {
+      color: var(--orange);
+      transform: translateX(4px);
+      display: inline-block;
+    }
+
+    .footer-services ul li:hover {
+      color: var(--white);
+    }
+
+    .footer-contact p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .footer-contact p strong {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.4s var(--transition-premium);
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-social a:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: var(--white);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.3);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0 32px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-legal {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.15);
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+      .footer-desc {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+      .footer-legal {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .footer-inner {
+        padding: 0 24px;
+      }
+    }
+
+    /* ============================================
+       FLOATING BUTTONS
+    ============================================ */
+    .float-whatsapp,
+    .float-call,
+    .back-to-top {
+      position: fixed;
+      z-index: 900;
+      border: none;
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s var(--transition-premium);
+      text-decoration: none;
+    }
+
+    .float-whatsapp {
+      bottom: 100px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+    }
+
+    .float-call {
+      bottom: 168px;
+      right: 24px;
+      background: var(--orange);
+      color: white;
+    }
+
+    .back-to-top {
+      bottom: 24px;
+      right: 24px;
+      background: var(--orange);
+      color: white;
+      font-size: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.8) translateY(20px);
+      transition: all 0.5s var(--transition-premium);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1) translateY(0);
+    }
+
+    .float-whatsapp:hover,
+    .float-call:hover,
+    .back-to-top:hover {
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .float-whatsapp,
+      .float-call,
+      .back-to-top {
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+      }
+      .float-whatsapp {
+        bottom: 80px;
+        right: 16px;
+      }
+      .float-call {
+        bottom: 138px;
+        right: 16px;
+      }
+      .back-to-top {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+
+    /* ============================================
+       RESPONSIVE - CONTACT PAGE
+    ============================================ */
+    @media (max-width: 1024px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .contact-details {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-form-wrapper {
+        padding: 32px 28px;
+      }
+      .map-container iframe {
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-page-section {
+        padding: 60px 0;
+      }
+      .contact-details {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .contact-form-wrapper {
+        padding: 24px 20px;
+      }
+      .contact-form-wrapper h3 {
+        font-size: 20px;
+      }
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-page-section {
+        padding: 40px 0;
+      }
+      .contact-form-wrapper {
+        padding: 18px 16px;
+      }
+      .contact-card {
+        padding: 18px 16px;
+      }
+      .business-hours,
+      .social-links-section {
+        padding: 18px 16px;
+      }
+      .map-container iframe {
+        height: 200px;
+      }
+    }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+    ============================================ */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(50px) scale(0.98);
+      transition: all 0.9s var(--transition-premium);
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .animate-on-scroll.delay-1 {
+      transition-delay: 0.1s;
+    }
+    .animate-on-scroll.delay-2 {
+      transition-delay: 0.2s;
+    }
+    .animate-on-scroll.delay-3 {
+      transition-delay: 0.3s;
+    }
+    .animate-on-scroll.delay-4 {
+      transition-delay: 0.4s;
+    }
+    .animate-on-scroll.delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .animate-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .contact-banner-bg img {
+        animation: none !important;
+      }
+      .banner-text {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+      }
+      .breadcrumb {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+      </div>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="nav-cta">Call Now ↗</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="mobile-cta">Get a Quote ↗</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT BANNER -->
+  <section class="contact-banner">
+    <div class="contact-banner-bg">
+      <img src="banner-chennai.png" alt="Contact Chennai Groups" loading="lazy" />
+      <div class="banner-overlay"></div>
+    </div>
+    <div class="container banner-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">Contact Us</span>
+      </div>
+      <div class="banner-text">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h1>Let's Build Your <br /><span class="highlight-italic">Next Landmark</span></h1>
+        <p>Share your requirement and we'll shape the right direction for your brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-page-section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- LEFT: Contact Info -->
+        <div class="contact-info-wrapper animate-on-scroll">
+          <div>
+            <span class="eyebrow">CONTACT INFORMATION</span>
+            <h2>We'd Love to <span class="highlight-italic">Hear</span> From You</h2>
+            <p>Have a project in mind? Reach out to us and let's create something extraordinary together.</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-card animate-on-scroll delay-1">
+              <span class="icon"><i class="fas fa-phone"></i></span>
+              <h4>Phone</h4>
+              <p><a href="tel:+919884600472">+91 98846 00472</a></p>
+            </div>
+            <div class="contact-card animate-on-scroll delay-2">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <h4>Email</h4>
+              <p><a href="mailto:chennaigroups.che@gmail.com">chennaigroups.che@gmail.com</a></p>
+            </div>
+            <div class="contact-card animate-on-scroll delay-3">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <h4>Location</h4>
+              <p>83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</p>
+            </div>
+            <div class="contact-card animate-on-scroll delay-4">
+              <span class="icon"><i class="fas fa-clock"></i></span>
+              <h4>Working Hours</h4>
+              <p>Mon-Sat 9:00 AM - 7:00 PM</p>
+            </div>
+          </div>
+
+          <div class="business-hours animate-on-scroll delay-1">
+            <h4><i class="fas fa-calendar-alt"></i> Business Hours</h4>
+            <div class="hours-row">
+              <span class="day">Monday - Saturday</span>
+              <span class="time">10:00 AM - 7:00 PM</span>
+            </div>
+            <!-- <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">9:00 AM - 5:00 PM</span>
+            </div> -->
+            <div class="hours-row">
+              <span class="day">Sunday</span>
+              <span class="time closed">Closed</span>
+            </div>
+          </div>
+
+          <div class="social-links-section animate-on-scroll delay-2">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/19DY2N3MiR/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Contact Form -->
+        <div class="contact-form-wrapper animate-on-scroll delay-1">
+          <h3>Send Us a Message</h3>
+          <p>Fill in the details below and we'll get back to you within 24 hours.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" placeholder="Enter your company name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required />
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Email Address <span class="required">*</span></label>
+                <input type="email" id="emailAddress" placeholder="Enter your email address" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceInterest">Service Interested In</label>
+              <select id="serviceInterest">
+                <option value="">Select a service</option>
+                <option value="hoardings">Hoardings</option>
+                <option value="led">LED Boards</option>
+                <option value="backlit">Backlit Boards</option>
+                <option value="flex">Flex Boards</option>
+                <option value="sign">Sign Boards</option>
+                <option value="custom">Customized Structures</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projectDetails">Project Details <span class="required">*</span></label>
+              <textarea id="projectDetails" placeholder="Tell us about your project, timeline, budget, and specific requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Thank you! Your enquiry has been sent. We'll get back to you within 24 hours.
+            </div>
+
+            <div class="form-error" id="formError">
+              <i class="fas fa-exclamation-circle"></i> Please fill in all required fields correctly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-container animate-on-scroll">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15542.808325634885!2d80.2484931938806!3d13.118050062537057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1788885931779!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+          </div>
+          <p class="footer-tagline">Signage • Branding • Printing • Outdoor Advertising</p>
+          <p class="footer-desc">Premium visual branding solutions for businesses that demand excellence.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Hoardings</a></li>
+            <li><a href="services.html">LED Boards</a></li>
+            <li><a href="services.html">Backlit Boards</a></li>
+            <li><a href="services.html">Flex Boards</a></li>
+            <li><a href="services.html">Sign Boards</a></li>
+            <li><a href="services.html">Customized Structures</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><strong>Email:</strong> chennaigroups.che@gmail.com</p>
+          <p><strong>Location:</strong> C83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</p>
+          <p><strong>Hours:</strong> Mon-Sat 9AM-7PM</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/19DY2N3MiR/" aria-label="Facebook">📘</a>
+            <a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" aria-label="Instagram">📸</a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Chennai Groups. All rights reserved.</p>
+        <p class="footer-legal">Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/919884600472" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="tel:919884600472" class="float-call" aria-label="Call">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+  </a>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script>
+    // ============================================
+    // MOBILE MENU
+    // ============================================
+    function initMobileMenu() {
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const links = mobileMenu.querySelectorAll('a');
+
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+      });
+
+      links.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // ============================================
+    // BACK TO TOP
+    // ============================================
+    function initBackToTop() {
+      const backToTop = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', function() {
+        backToTop.classList.toggle('visible', window.scrollY > 500);
+      });
+
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // ============================================
+    // SCROLL ANIMATIONS
+    // ============================================
+    function initScrollAnimations() {
+      const animatedElements = document.querySelectorAll('.animate-on-scroll');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      animatedElements.forEach(el => observer.observe(el));
+
+      // Observe dynamically added elements
+      const mutationObserver = new MutationObserver(() => {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          if (!el.classList.contains('observed')) {
+            el.classList.add('observed');
+            observer.observe(el);
+          }
+        });
+      });
+      mutationObserver.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // ============================================
+    // FORM HANDLING — WhatsApp Integration
+    // ============================================
+    function initContactForm() {
+      const form = document.getElementById('contactForm');
+      const successMsg = document.getElementById('formSuccess');
+      const errorMsg = document.getElementById('formError');
+
+      // WhatsApp number (without +)
+      const whatsappNumber = '919884600472';
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Hide previous messages
+        successMsg.classList.remove('show');
+        errorMsg.classList.remove('show');
+
+        // Get fields
+        const name = document.getElementById('fullName');
+        const company = document.getElementById('companyName');
+        const phone = document.getElementById('phoneNumber');
+        const email = document.getElementById('emailAddress');
+        const service = document.getElementById('serviceInterest');
+        const details = document.getElementById('projectDetails');
+
+        // Reset styles
+        [name, phone, email, details].forEach(field => {
+          field.style.borderColor = '';
+          field.style.boxShadow = '';
+        });
+
+        let isValid = true;
+
+        // Validate name
+        if (!name.value.trim()) {
+          isValid = false;
+          name.style.borderColor = '#e53935';
+          name.style.boxShadow = '0 0 0 4px rgba(229, 57, 53, 0.1)';
+        }
+
+        // Validate phone
+        if (!phone.value.trim() || phone.value.trim().length < 10) {
+          isValid = false;
+          phone.style.borderColor = '#e53935';
+          phone.style.boxShadow = '0 0 0 4px rgba(229, 57, 53, 0.1)';
+        }
+
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+          isValid = false;
+          email.style.borderColor = '#e53935';
+          email.style.boxShadow = '0 0 0 4px rgba(229, 57, 53, 0.1)';
+        }
+
+        // Validate project details
+        if (!details.value.trim()) {
+          isValid = false;
+          details.style.borderColor = '#e53935';
+          details.style.boxShadow = '0 0 0 4px rgba(229, 57, 53, 0.1)';
+        }
+
+        if (!isValid) {
+          errorMsg.classList.add('show');
+          errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+        }
+
+        // ---------- Build WhatsApp message ----------
+        const serviceLabel = service.options[service.selectedIndex]?.text || 'Not specified';
+        const message = 
+`📋 *New Enquiry from Chennai Groups Website*
+
+👤 *Name:* ${name.value.trim()}
+🏢 *Company:* ${company.value.trim() || 'Not provided'}
+📞 *Phone:* ${phone.value.trim()}
+📧 *Email:* ${email.value.trim()}
+🔧 *Service:* ${serviceLabel}
+📝 *Project Details:*
+${details.value.trim()}
+
+— Sent via Contact Form`;
+
+        // Encode for URL
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // Open WhatsApp in new tab/window
+        window.open(whatsappURL, '_blank');
+
+        // Show success message
+        successMsg.classList.add('show');
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Optionally reset form
+        form.reset();
+
+        // Hide success after 6 seconds
+        setTimeout(() => {
+          successMsg.classList.remove('show');
+        }, 6000);
+      });
+
+      // Real-time validation clearing
+      form.querySelectorAll('input, textarea, select').forEach(field => {
+        field.addEventListener('input', function() {
+          this.style.borderColor = '';
+          this.style.boxShadow = '';
+        });
+        field.addEventListener('change', function() {
+          this.style.borderColor = '';
+          this.style.boxShadow = '';
+        });
+      });
+    }
+
+    // ============================================
+    // INIT
+    // ============================================
+    document.addEventListener('DOMContentLoaded', function() {
+      initMobileMenu();
+      initBackToTop();
+      initScrollAnimations();
+      initContactForm();
+    });
+  </script>
+
+</body>
+</html>

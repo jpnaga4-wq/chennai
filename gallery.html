@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Chennai Groups - Outdoor Advertising Projects</title>
+  <meta name="description" content="Explore our portfolio of premium outdoor advertising projects including Hoardings, LED Boards, Backlit Boards, Flex Boards, Sign Boards, and Customized Structures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* ============================================
+       RESET & BASE
+    ============================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --orange: #FF5A1F;
+      --orange-secondary: #FF8A4C;
+      --black: #090909;
+      --dark: #101010;
+      --warm-offwhite: #F7F5F0;
+      --muted-gray: #707070;
+      --white: #FFFFFF;
+      --transition-smooth: cubic-bezier(.22, 1, .36, 1);
+      --transition-premium: cubic-bezier(0.65, 0, 0.35, 1);
+      --header-height: 84px;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--warm-offwhite);
+      color: var(--black);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-top: var(--header-height);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+    ============================================ */
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: inline-block;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .eyebrow::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 72px);
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 52px);
+      margin-bottom: 16px;
+    }
+
+    h2 .highlight-italic,
+    h1 .highlight-italic {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--orange);
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: var(--muted-gray);
+      max-width: 600px;
+    }
+
+    .section-head {
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      margin-bottom: 8px;
+    }
+
+    /* ============================================
+       HEADER STYLES
+    ============================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+      background: white;
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo img {
+      height: 82px;
+      width: auto;
+      object-fit: contain;
+    }
+    .hamburger .line {
+  background: #fe581e !important;
+  border-color: #fe581e !important;
+}
+
+    .nav-desktop ul {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin: 0;
+    }
+
+    .nav-desktop a {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      position: relative;
+      padding: 4px 0;
+      transition: color 0.3s;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+
+    .nav-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--orange);
+      transition: width 0.4s var(--transition-premium);
+    }
+
+    .nav-desktop a:hover::after,
+    .nav-desktop a.active::after {
+      width: 100%;
+    }
+
+    .nav-desktop a.active {
+      color: var(--orange);
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      padding: 8px 22px !important;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.4s var(--transition-premium);
+    }
+
+    .nav-cta:hover {
+      background: var(--orange-secondary);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(255, 90, 31, 0.4);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1001;
+    }
+
+    .hamburger .line {
+      width: 28px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.4s var(--transition-premium);
+      transform-origin: center;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active .line:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .hamburger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background: var(--black);
+      z-index: 999;
+      transition: right 0.6s var(--transition-premium);
+      overflow-y: auto;
+      padding-top: 100px;
+    }
+
+    .mobile-menu.open {
+      right: 0;
+    }
+
+    .mobile-menu-inner ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      padding: 40px 24px;
+    }
+
+    .mobile-menu-inner a {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .mobile-menu-inner a:hover {
+      color: var(--orange);
+    }
+
+    .mobile-cta {
+      background: var(--orange);
+      padding: 12px 32px !important;
+      border-radius: 30px;
+      font-size: 14px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .nav-desktop {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* ============================================
+       GALLERY BANNER
+    ============================================ */
+    .gallery-banner {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+
+    .gallery-banner-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .gallery-banner-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+      animation: bannerZoom 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes bannerZoom {
+      0% { transform: scale(1.05); }
+      100% { transform: scale(1.15); }
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(9, 9, 9, 0.85) 0%, rgba(9, 9, 9, 0.4) 60%, rgba(9, 9, 9, 0.2) 100%);
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      padding: 80px 40px 60px;
+      width: 100%;
+    }
+
+    .banner-text {
+      opacity: 0;
+      transform: translateY(60px) scale(0.95);
+      animation: comingUp 1.2s var(--transition-premium) 0.3s forwards;
+    }
+
+    @keyframes comingUp {
+      0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .banner-text h1 {
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .banner-text p {
+      font-size: clamp(16px, 1.5vw, 24px);
+      color: rgba(255, 255, 255, 0.6);
+      max-width: 600px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: comingUp 0.8s var(--transition-premium) 0.2s forwards;
+    }
+
+    .breadcrumb a {
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--orange);
+    }
+
+    .breadcrumb-separator {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .breadcrumb-current {
+      color: var(--orange);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-banner {
+        min-height: 40vh;
+      }
+      .banner-content {
+        padding: 60px 24px 40px;
+      }
+      .banner-text h1 {
+        font-size: clamp(28px, 6vw, 40px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-banner {
+        min-height: 35vh;
+      }
+      .banner-content {
+        padding: 50px 16px 30px;
+      }
+    }
+
+    /* ============================================
+       FILTER BUTTONS
+    ============================================ */
+    .gallery-filters {
+      padding: 40px 0 30px;
+      text-align: center;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .filter-btn {
+      background: transparent;
+      color: var(--muted-gray);
+      border: 1.5px solid #e5e5e5;
+      padding: 8px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.3s var(--transition-smooth);
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--orange);
+      color: var(--orange);
+    }
+
+    .filter-btn.active {
+      background: var(--orange);
+      color: var(--white);
+      border-color: var(--orange);
+    }
+
+    @media (max-width: 480px) {
+      .filter-btn {
+        padding: 6px 16px;
+        font-size: 12px;
+      }
+      .filter-group {
+        gap: 6px;
+      }
+    }
+
+    /* ============================================
+       GALLERY GRID
+    ============================================ */
+    .gallery-section {
+      padding: 0 0 80px;
+      background: var(--warm-offwhite);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    /* ============================================
+       GALLERY ITEM - EQUAL SIZE FOR ALL
+    ============================================ */
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      background: var(--dark);
+      transition: all 0.5s var(--transition-premium);
+    }
+
+    /* Disable tall / wide variations so all items stay equal */
+    .gallery-item.tall,
+    .gallery-item.wide {
+      aspect-ratio: 4 / 3;
+      grid-row: auto;
+      grid-column: auto;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--transition-premium);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item .item-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 24px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.5s var(--transition-premium);
+    }
+
+    .gallery-item:hover .item-overlay {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .gallery-item .item-overlay h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+
+    .gallery-item .item-overlay p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .gallery-item .item-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.4s var(--transition-premium);
+    }
+
+    .gallery-item:hover .item-badge {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item .item-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      color: var(--white);
+      font-size: 40px;
+      opacity: 0;
+      transition: all 0.5s var(--transition-premium);
+      background: rgba(255, 90, 31, 0.8);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-item:hover .item-icon {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* Always-visible "+" hint (mobile + desktop feedback) */
+    .gallery-item::before {
+      content: '+';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(9, 9, 9, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      padding-bottom: 2px;
+      z-index: 3;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.35s var(--transition-smooth);
+      backdrop-filter: blur(6px);
+      pointer-events: none;
+    }
+
+    .gallery-item:hover::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    @media (hover: none) {
+      .gallery-item::before {
+        opacity: 0.9;
+        transform: scale(1);
+      }
+    }
+
+    /* ============================================
+       LIGHTBOX
+    ============================================ */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.94);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    /* Wrapper that holds the real image and centers it */
+    .lightbox-content {
+      position: relative;
+      max-width: 1200px;
+      max-height: 100%;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: lightboxIn 0.4s var(--transition-premium);
+    }
+
+    @keyframes lightboxIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* The image shows its REAL height / aspect ratio */
+    .lightbox-content img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: calc(100vh - 160px);
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+      display: block;
+    }
+
+    /* Close icon – stays visible inside the viewport */
+    .lightbox-close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--white);
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2100;
+      transition: all 0.35s var(--transition-premium);
+      backdrop-filter: blur(8px);
+    }
+
+    .lightbox-close:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      transform: rotate(90deg) scale(1.06);
+      box-shadow: 0 8px 28px rgba(255, 90, 31, 0.45);
+    }
+
+    .lightbox-nav {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: var(--white);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 22px;
+      line-height: 1;
+      transition: all 0.3s var(--transition-smooth);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2100;
+      backdrop-filter: blur(8px);
+    }
+
+    .lightbox-nav:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+    }
+
+    .lightbox-nav.prev {
+      left: 20px;
+    }
+
+    .lightbox-nav.next {
+      right: 20px;
+    }
+
+    /* Caption sits just above the bottom edge */
+    .lightbox-caption {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      padding: 0 80px;
+      pointer-events: none;
+      z-index: 2100;
+    }
+
+    @media (max-width: 768px) {
+      .lightbox {
+        padding: 50px 18px;
+      }
+      .lightbox-content img {
+        max-height: calc(100vh - 150px);
+        border-radius: 8px;
+      }
+      .lightbox-close {
+        top: 14px;
+        right: 14px;
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+      }
+      .lightbox-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+      .lightbox-nav.prev {
+        left: 12px;
+      }
+      .lightbox-nav.next {
+        right: 12px;
+      }
+      .lightbox-caption {
+        font-size: 12px;
+        padding: 0 60px;
+        bottom: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .lightbox {
+        padding: 44px 12px;
+      }
+      .lightbox-content img {
+        max-height: calc(100vh - 130px);
+      }
+      .lightbox-close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+      }
+      .lightbox-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+      }
+      .lightbox-nav.prev {
+        left: 8px;
+      }
+      .lightbox-nav.next {
+        right: 8px;
+      }
+      .lightbox-caption {
+        font-size: 11px;
+        padding: 0 50px;
+      }
+    }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .site-footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 60px 0 0;
+      position: relative;
+    }
+
+    .site-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--orange), transparent);
+      opacity: 0.3;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-brand .footer-logo img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: var(--orange);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .footer-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 320px;
+      line-height: 1.7;
+    }
+
+    .footer-links h4,
+    .footer-services h4,
+    .footer-contact h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-links ul,
+    .footer-services ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links ul li a,
+    .footer-services ul li {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .footer-links ul li a:hover {
+      color: var(--orange);
+      transform: translateX(4px);
+      display: inline-block;
+    }
+
+    .footer-services ul li:hover {
+      color: var(--white);
+    }
+
+    .footer-contact p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .footer-contact p strong {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: all 0.4s var(--transition-premium);
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-social a:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: var(--white);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(255, 90, 31, 0.3);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0 32px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-legal {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.15);
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+      .footer-desc {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+      .footer-legal {
+        flex-direction: column;
+        gap: 4px;
+      }
+      .footer-inner {
+        padding: 0 24px;
+      }
+    }
+
+    /* ============================================
+       FLOATING BUTTONS
+    ============================================ */
+    .float-whatsapp,
+    .float-call,
+    .back-to-top {
+      position: fixed;
+      z-index: 900;
+      border: none;
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s var(--transition-premium);
+      text-decoration: none;
+    }
+
+    .float-whatsapp {
+      bottom: 100px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+    }
+
+    .float-call {
+      bottom: 168px;
+      right: 24px;
+      background: var(--orange);
+      color: white;
+    }
+
+    .back-to-top {
+      bottom: 24px;
+      right: 24px;
+      background: var(--orange);
+      color: white;
+      font-size: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.8) translateY(20px);
+      transition: all 0.5s var(--transition-premium);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1) translateY(0);
+    }
+
+    .float-whatsapp:hover,
+    .float-call:hover,
+    .back-to-top:hover {
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .float-whatsapp,
+      .float-call,
+      .back-to-top {
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+      }
+      .float-whatsapp {
+        bottom: 80px;
+        right: 16px;
+      }
+      .float-call {
+        bottom: 138px;
+        right: 16px;
+      }
+      .back-to-top {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+
+    /* ============================================
+       RESPONSIVE GALLERY GRID
+    ============================================ */
+    @media (max-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .gallery-item .item-overlay h3 {
+        font-size: 15px;
+      }
+      .gallery-item .item-overlay p {
+        font-size: 12px;
+      }
+      .gallery-item .item-overlay {
+        padding: 14px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .gallery-item .item-overlay h3 {
+        font-size: 16px;
+      }
+      .gallery-item .item-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 28px;
+      }
+      .gallery-item .item-badge {
+        font-size: 10px;
+        padding: 3px 10px;
+      }
+      .gallery-item::before {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    /* ============================================
+       SCROLL ANIMATIONS
+    ============================================ */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(50px) scale(0.98);
+      transition: all 0.9s var(--transition-premium);
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .animate-on-scroll.delay-1 {
+      transition-delay: 0.1s;
+    }
+    .animate-on-scroll.delay-2 {
+      transition-delay: 0.2s;
+    }
+    .animate-on-scroll.delay-3 {
+      transition-delay: 0.3s;
+    }
+    .animate-on-scroll.delay-4 {
+      transition-delay: 0.4s;
+    }
+    .animate-on-scroll.delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      .animate-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .gallery-banner-bg img {
+        animation: none !important;
+      }
+      .banner-text {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+      }
+      .breadcrumb {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+      </div>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="nav-cta">Call Now ↗</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+919884600472" class="mobile-cta">Get a Quote ↗</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- GALLERY BANNER -->
+  <section class="gallery-banner">
+    <div class="gallery-banner-bg">
+      <img src="banner-chennai.png" alt="Chennai Groups Gallery" loading="lazy" />
+      <div class="banner-overlay"></div>
+    </div>
+    <div class="container banner-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">Gallery</span>
+      </div>
+      <div class="banner-text">
+        <span class="eyebrow">OUR PORTFOLIO</span>
+        <h1>Our <span class="highlight-italic">Projects</span></h1>
+        <p>Explore our portfolio of premium outdoor advertising and signage projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY FILTERS -->
+  <section class="gallery-filters">
+    <div class="container">
+      <div class="filter-group animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="hoardings">Hoardings</button>
+        <button class="filter-btn" data-filter="led">LED Boards</button>
+        <button class="filter-btn" data-filter="backlit">Backlit Boards</button>
+        <button class="filter-btn" data-filter="flex">Flex Boards</button>
+        <button class="filter-btn" data-filter="sign">Sign Boards</button>
+        <button class="filter-btn" data-filter="custom">Custom Structures</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery items will be rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">›</button>
+    <div class="lightbox-content" id="lightboxContent">
+      <img id="lightboxImg" src="" alt="Gallery image" />
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="chennai-group.jpg" alt="Chennai Groups logo" />
+          </div>
+          <p class="footer-tagline">Signage • Branding • Printing • Outdoor Advertising</p>
+          <p class="footer-desc">Premium visual branding solutions for businesses that demand excellence.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Hoardings</a></li>
+            <li><a href="services.html">LED Boards</a></li>
+            <li><a href="services.html">Backlit Boards</a></li>
+            <li><a href="services.html">Flex Boards</a></li>
+            <li><a href="services.html">Sign Boards</a></li>
+            <li><a href="services.html">Customized Structures</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><strong>Email:</strong> chennaigroups.che@gmail.com</p>
+          <p><strong>Location:</strong> C83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</p>
+          <p><strong>Hours:</strong> Mon-Sat 9AM-7PM</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/19DY2N3MiR/" aria-label="Facebook">📘</a>
+            <a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" aria-label="Instagram">📸</a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Chennai Groups. All rights reserved.</p>
+        <p class="footer-legal">Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/919884600472" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+  <a href="tel:919884600472" class="float-call" aria-label="Call">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+  </a>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script>
+    // ============================================
+    // GALLERY DATA  (exact image paths preserved)
+    // ============================================
+    const galleryData = [
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-1.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-2.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-3.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-4.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-5.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-6.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 2,
+        title: 'Large Format Hoarding',
+        category: 'hoardings',
+        categoryLabel: 'Hoarding',
+        image: 'hoarding-7.jpg',
+        description: 'High-impact outdoor hoarding for brand campaign'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-1.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-2.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-3.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-4.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-5.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 8,
+        title: 'LED Display Screen',
+        category: 'led',
+        categoryLabel: 'LED Board',
+        image: 'led-6.jpg',
+        description: 'Large-format LED display screen installation'
+      },
+      {
+        id: 4,
+        title: 'Custom Sign Board Design',
+        category: 'sign',
+        categoryLabel: 'Sign Board',
+        image: 'led-1.jpg',
+        description: 'Custom-designed sign board for brand identity'
+      },
+      {
+        id: 5,
+        title: 'ACP Cladding Project',
+        category: 'custom',
+        categoryLabel: 'Custom Structure',
+        image: 'costom-1.jpg',
+        description: 'Premium ACP cladding for commercial building'
+      },
+      {
+        id: 5,
+        title: 'ACP Cladding Project',
+        category: 'custom',
+        categoryLabel: 'Custom Structure',
+        image: 'costom-2.jpg',
+        description: 'Premium ACP cladding for commercial building'
+      },
+      {
+        id: 5,
+        title: 'ACP Cladding Project',
+        category: 'custom',
+        categoryLabel: 'Custom Structure',
+        image: 'costom-3.jpg',
+        description: 'Premium ACP cladding for commercial building'
+      },
+      {
+        id: 5,
+        title: 'ACP Cladding Project',
+        category: 'custom',
+        categoryLabel: 'Custom Structure',
+        image: 'costom-4.jpg',
+        description: 'Premium ACP cladding for commercial building'
+      },
+      {
+        id: 5,
+        title: 'ACP Cladding Project',
+        category: 'custom',
+        categoryLabel: 'Custom Structure',
+        image: 'costom-5.jpg',
+        description: 'Premium ACP cladding for commercial building'
+      },
+      {
+        id: 6,
+        title: 'Flex Board Printing',
+        category: 'flex',
+        categoryLabel: 'Flex Board',
+        image: 'flex-1.JPG',
+        description: 'High-quality flex printing for outdoor campaign'
+      },
+      {
+        id: 6,
+        title: 'Flex Board Printing',
+        category: 'flex',
+        categoryLabel: 'Flex Board',
+        image: 'flex-2.jpg',
+        description: 'High-quality flex printing for outdoor campaign'
+      },
+      {
+        id: 10,
+        title: 'Backlit Menu Boards',
+        category: 'backlit',
+        categoryLabel: 'Backlit Board',
+        image: 'Backlit-1.jpg',
+        description: 'Elegant backlit menu boards for restaurant'
+      },
+      {
+        id: 10,
+        title: 'Backlit Menu Boards',
+        category: 'backlit',
+        categoryLabel: 'Backlit Board',
+        image: 'Backlit-2.jpg',
+        description: 'Elegant backlit menu boards for restaurant'
+      },
+      {
+        id: 11,
+        title: 'Exterior Signage Solution',
+        category: 'sign',
+        categoryLabel: 'Sign Board',
+        image: 'led-7.jpg',
+        description: 'Bold exterior signage for brand visibility'
+      },
+      {
+        id: 11,
+        title: 'Exterior Signage Solution',
+        category: 'sign',
+        categoryLabel: 'Sign Board',
+        image: 'led-2.jpg',
+        description: 'Bold exterior signage for brand visibility'
+      }
+    ];
+
+    // ============================================
+    // RENDER GALLERY
+    // ============================================
+    let currentFilter = 'all';
+    let currentImages = galleryData;
+
+    function renderGallery(filter = 'all') {
+      const grid = document.getElementById('galleryGrid');
+      if (!grid) return;
+
+      currentFilter = filter;
+      const filtered = filter === 'all'
+        ? galleryData
+        : galleryData.filter(item => item.category === filter);
+      currentImages = filtered;
+
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--muted-gray);">
+            <p style="font-size: 18px;">No projects found in this category.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach((item, index) => {
+        const div = document.createElement('div');
+        const delay = index % 6;
+        // All items use the same class + same aspect ratio (4/3)
+        div.className = `gallery-item animate-on-scroll delay-${delay}`;
+        div.dataset.category = item.category;
+        div.dataset.id = item.id;
+        div.dataset.index = index;
+
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" loading="lazy" />
+          <span class="item-badge">${item.categoryLabel}</span>
+          <div class="item-icon">
+            <i class="fas fa-search-plus"></i>
+          </div>
+          <div class="item-overlay">
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+          </div>
+        `;
+
+        div.addEventListener('click', () => openLightbox(index));
+        grid.appendChild(div);
+      });
+
+      // Re-trigger animations
+      setTimeout(() => {
+        document.querySelectorAll('.gallery-item.animate-on-scroll').forEach(el => {
+          if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('visible');
+          }
+        });
+      }, 100);
+    }
+
+    // ============================================
+    // FILTER BUTTONS
+    // ============================================
+    function initFilters() {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          buttons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          renderGallery(this.dataset.filter);
+        });
+      });
+    }
+
+    // ============================================
+    // LIGHTBOX
+    // ============================================
+    let currentLightboxIndex = 0;
+
+    function openLightbox(index) {
+      if (index < 0 || index >= currentImages.length) return;
+
+      currentLightboxIndex = index;
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      const caption = document.getElementById('lightboxCaption');
+      const item = currentImages[index];
+
+      // Exact image path preserved
+      img.src = item.image;
+      img.alt = item.title;
+      caption.textContent = `${item.title} - ${item.description}`;
+
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function navigateLightbox(direction) {
+      const total = currentImages.length;
+      if (!total) return;
+      currentLightboxIndex = (currentLightboxIndex + direction + total) % total;
+
+      const img = document.getElementById('lightboxImg');
+      const caption = document.getElementById('lightboxCaption');
+      const item = currentImages[currentLightboxIndex];
+
+      img.src = item.image;
+      img.alt = item.title;
+      caption.textContent = `${item.title} - ${item.description}`;
+    }
+
+    function initLightbox() {
+      const closeBtn = document.getElementById('lightboxClose');
+      const prevBtn = document.getElementById('lightboxPrev');
+      const nextBtn = document.getElementById('lightboxNext');
+      const lightbox = document.getElementById('lightbox');
+      const content = document.getElementById('lightboxContent');
+
+      closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeLightbox();
+      });
+
+      prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigateLightbox(-1);
+      });
+
+      nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigateLightbox(1);
+      });
+
+      // Click OUTSIDE the exact image -> close.
+      lightbox.addEventListener('click', function(e) {
+        // If user clicked directly on the image (or its content wrapper), do nothing
+        if (e.target.closest('#lightboxImg')) return;
+        if (e.target.closest('#lightboxContent') && e.target.tagName === 'IMG') return;
+        if (e.target.closest('#lightboxClose')) return;
+        if (e.target.closest('#lightboxPrev')) return;
+        if (e.target.closest('#lightboxNext')) return;
+        // Clicking on backdrop / caption / empty area closes
+        if (e.target === lightbox || e.target === content || e.target.closest('#lightboxCaption')) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+      });
+    }
+
+    // ============================================
+    // SCROLL ANIMATIONS
+    // ============================================
+    function initScrollAnimations() {
+      const animatedElements = document.querySelectorAll('.animate-on-scroll');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      animatedElements.forEach(el => observer.observe(el));
+
+      // Observe dynamically added gallery items
+      const mutationObserver = new MutationObserver(() => {
+        document.querySelectorAll('.gallery-item').forEach(el => {
+          if (!el.classList.contains('observed')) {
+            el.classList.add('observed');
+            observer.observe(el);
+          }
+        });
+      });
+      mutationObserver.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // ============================================
+    // MOBILE MENU
+    // ============================================
+    function initMobileMenu() {
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const links = mobileMenu.querySelectorAll('a');
+
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+      });
+
+      links.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    // ============================================
+    // BACK TO TOP
+    // ============================================
+    function initBackToTop() {
+      const backToTop = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', function() {
+        backToTop.classList.toggle('visible', window.scrollY > 500);
+      });
+
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // ============================================
+    // INIT
+    // ============================================
+    document.addEventListener('DOMContentLoaded', function() {
+      renderGallery('all');
+      initFilters();
+      initLightbox();
+      initScrollAnimations();
+      initMobileMenu();
+      initBackToTop();
+    });
+  </script>
+
+</body>
+</html>
