@@ -37,7 +37,7 @@ const slidesData = [{
 }];
 const servicesData = [
     { title: 'LED Boards', desc: 'Illuminated signage engineered for day-and-night visibility.', img: 'real-ban-2.webp' },
-    { title: 'Box Type Arch', desc: 'Clean, modern arches that add strength and style to any space.', img: 'costom-1.JPG' },
+    { title: 'Box Type Arch', desc: 'Clean, modern arches that add strength and style to any space.', img: 'costom-1.jpg' },
     { title: '3M Vinay Backlight Board', desc: 'Premium backlit signage with bright illumination and a clean, professional finish.', img: 'led-4.jpg' },
     { title: 'Creative backlight board', desc: 'Eye-catching illuminated signage that enhances your brand visibility.', img: 'Backlit-2.JPG' },
     { title: 'Branding', desc: 'Consistent visual branding across every customer touchpoint.', img: 'hoarding-5.JPG' },
