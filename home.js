@@ -11,7 +11,7 @@ const slidesData = [{
         { text: 'Explore Services ↗', class: 'btn-primary', href: 'services.html' },
         { text: 'Get a Free Quote ↗', class: 'btn-secondary', href: 'contact.html' }
     ],
-    image: 'che-ban-1.png'
+    image: 'real-ban-1.webp'
 }, {
     id: 1,
     eyebrow: 'LED • ACP • METAL • 3D',
@@ -22,7 +22,7 @@ const slidesData = [{
         { text: 'View Solutions ↗', class: 'btn-primary', href: 'services.html' },
         { text: 'Start a Project ↗', class: 'btn-secondary', href: 'contact.html' }
     ],
-    image: 'che-ban-2.png'
+    image: 'real-ban-2.webp'
 }, {
     id: 2,
     eyebrow: 'OUTDOOR • PRINT • CREATIVE',
@@ -33,15 +33,15 @@ const slidesData = [{
         { text: 'See Our Work ↗', class: 'btn-primary', href: 'gallery.html' },
         { text: 'Get a Free Quote ↗', class: 'btn-secondary', href: 'contact.html' }
     ],
-    image: 'che-ban-3.png'
+    image: 'real-ban-3.webp'
 }];
 const servicesData = [
-    { title: 'LED Boards', desc: 'Illuminated signage engineered for day-and-night visibility.', img: 'led-1.jpg' },
-    { title: 'ACP Signage', desc: 'Clean commercial signage and cladding with a modern finish.', img: 'led-7.jpg' },
-    { title: 'Hoardings', desc: 'High-impact outdoor advertising built for maximum reach.', img: 'hoarding-6.jpg' },
-    { title: 'Printing Work', desc: 'Large-format and commercial printing for campaigns and displays.', img: 'Backlit-2.JPG' },
+    { title: 'LED Boards', desc: 'Illuminated signage engineered for day-and-night visibility.', img: 'real-ban-2.webp' },
+    { title: 'Box Type Arch', desc: 'Clean, modern arches that add strength and style to any space.', img: 'costom-1.JPG' },
+    { title: '3M Vinay Backlight Board', desc: 'Premium backlit signage with bright illumination and a clean, professional finish.', img: 'led-4.jpg' },
+    { title: 'Creative backlight board', desc: 'Eye-catching illuminated signage that enhances your brand visibility.', img: 'Backlit-2.JPG' },
     { title: 'Branding', desc: 'Consistent visual branding across every customer touchpoint.', img: 'hoarding-5.JPG' },
-    { title: 'Creative Jobs', desc: 'Custom creative concepts and installations around your location.', img: 'costom-2.JPG' }
+    { title: 'Flex Arch - Non Light LEX ARCH -', desc: 'Custom creative concepts and installations around your location.', img: 'costom-2.JPG' }
 ];
 
 const processData = [
