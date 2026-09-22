@@ -41,7 +41,7 @@ const servicesData = [
     { title: '3M Vinay Backlight Board', desc: 'Premium backlit signage with bright illumination and a clean, professional finish.', img: 'led-4.jpg' },
     { title: 'Creative backlight board', desc: 'Eye-catching illuminated signage that enhances your brand visibility.', img: 'Backlit-2.JPG' },
     { title: 'Branding', desc: 'Consistent visual branding across every customer touchpoint.', img: 'hoarding-5.JPG' },
-    { title: 'Flex Arch - Non Light LEX ARCH -', desc: 'Custom creative concepts and installations around your location.', img: 'costom-2.JPG' }
+    { title: 'Mobile van advertising -', desc: 'Take your brand on the road with eye-catching mobile van advertising that reaches audiences wherever they go.', img: 'high----.png' }
 ];
 
 const processData = [
