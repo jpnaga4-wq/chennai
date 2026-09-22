@@ -1293,13 +1293,14 @@
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="hoardings">Hoardings</button>
         <button class="filter-btn" data-filter="led">LED Boards</button>
-        <button class="filter-btn" data-filter="backlight">backlight Boards</button>
+        <button class="filter-btn" data-filter="backlight">Backlight Boards</button>
         <button class="filter-btn" data-filter="flex">Flex Boards</button>
         <button class="filter-btn" data-filter="sign">Sign Boards</button>
         <button class="filter-btn" data-filter="custom">Custom Structures</button>
-        <!-- NEW: Promotional Roll Up Standee filter -->
+        <!-- Promotional Roll Up Standee filter -->
         <button class="filter-btn" data-filter="standee">Promotional Roll Up Standee</button>
-         <button class="filter-btn" data-filter="Mobile">Mobile van advertising</button>
+        <!-- Mobile van advertising filter (slug must match item category) -->
+        <button class="filter-btn" data-filter="mobile">Mobile Van Advertising</button>
       </div>
     </div>
   </section>
@@ -1324,7 +1325,6 @@
     <div class="lightbox-caption" id="lightboxCaption"></div>
   </div>
 
-  <!-- FOOTER -->
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -1351,7 +1351,7 @@
           <ul>
             <li><a href="services.html">Hoardings</a></li>
             <li><a href="services.html">LED Boards</a></li>
-            <li><a href="services.html">backlight Boards</a></li>
+            <li><a href="services.html">Backlight Boards</a></li>
             <li><a href="services.html">Flex Boards</a></li>
             <li><a href="services.html">Sign Boards</a></li>
             <li><a href="services.html">Customized Structures</a></li>
@@ -1361,17 +1361,15 @@
           <h4>Get in Touch</h4>
           <p><strong>Email:</strong> chennaigroups.che@gmail.com</p>
           <p><strong>Location:</strong> 83, I Block, 5th Floor, Tnscb Moorthingar Vysarpadi, Chennai – 600039.</p>
-          <p><strong>Branches:</strong> Chennai  , Coimbatore</p>
+          <p><strong>Branches:</strong> Chennai , Coimbatore</p>
           <p><strong>Hours:</strong> Mon-Sat 10AM-7PM</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/share/19DY2N3MiR/" target="_blank">
-  <img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook" width="32" height="32">
-</a>
-
-<a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" target="_blank">
-  <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" width="32" height="32">
-</a>
-           
+            <a href="https://www.facebook.com/share/19DY2N3MiR/" target="_blank" rel="noopener">
+              <img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com/thamizhkadavulmurugan?stkn=MWs4MTZjOXc0M3p1Mw==" target="_blank" rel="noopener">
+              <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" width="32" height="32">
+            </a>
           </div>
         </div>
       </div>
@@ -1381,6 +1379,7 @@
       </div>
     </div>
   </footer>
+
   <!-- FLOATING BUTTONS -->
   <a href="https://wa.me/919884600472" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
@@ -1400,11 +1399,14 @@
 
   <script>
     // ============================================
-    // GALLERY DATA  (exact image paths preserved)
+    // GALLERY DATA
+    // NOTE: "category" must exactly match the
+    // data-filter value on the matching button.
     // ============================================
     const galleryData = [
+      /* ---------- HOARDINGS ---------- */
       {
-        id: 2,
+        id: 1,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1420,7 +1422,7 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
       {
-        id: 2,
+        id: 3,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1428,7 +1430,7 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
       {
-        id: 2,
+        id: 4,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1436,7 +1438,7 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
       {
-        id: 2,
+        id: 5,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1444,7 +1446,7 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
       {
-        id: 2,
+        id: 6,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1452,7 +1454,7 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
       {
-        id: 2,
+        id: 7,
         title: 'Large Format Hoarding',
         category: 'hoardings',
         categoryLabel: 'Hoarding',
@@ -1460,53 +1462,51 @@
         description: 'High-impact outdoor hoarding for brand campaign'
       },
 
-
-      {
-        id: 2,
-        title: 'Large Format Hoarding',
-        category: 'Mobile van advertising',
-        categoryLabel: 'Hoarding',
-        image: 'WhatsApp Image 2026-09-22 at 9.34.23 PM.jpeg',
-        description: 'High-impact outdoor hoarding for brand campaign'
-      },
-      {
-        id: 2,
-        title: 'Large Format Hoarding',
-        category: 'Mobile van advertising',
-        categoryLabel: 'Hoarding',
-        image: 'WhatsApp Image 2026-09-22 at 9.34.22 PM (1).jpeg',
-        description: 'High-impact outdoor hoarding for brand campaign'
-      },
-         {
-        id: 2,
-        title: 'Large Format Hoarding',
-        category: 'Mobile van advertising',
-        categoryLabel: 'Hoarding',
-        image: 'WhatsApp Image 2026-09-22 at 9.34.22 PM.jpeg',
-        description: 'High-impact outdoor hoarding for brand campaign'
-      },
-
-
-      
-
+      /* ---------- MOBILE VAN ADVERTISING ---------- */
       {
         id: 8,
+        title: 'Mobile Van Advertising',
+        category: 'mobile',
+        categoryLabel: 'Mobile Van',
+        image: 'WhatsApp%20Image%202026-09-22%20at%209.34.23%20PM.jpeg',
+        description: 'Mobile van advertising campaign on the move'
+      },
+      {
+        id: 9,
+        title: 'Mobile Van Advertising',
+        category: 'mobile',
+        categoryLabel: 'Mobile Van',
+        image: 'WhatsApp%20Image%202026-09-22%20at%209.34.22%20PM%20(1).jpeg',
+        description: 'Mobile van advertising campaign on the move'
+      },
+      {
+        id: 10,
+        title: 'Mobile Van Advertising',
+        category: 'mobile',
+        categoryLabel: 'Mobile Van',
+        image: 'WhatsApp%20Image%202026-09-22%20at%209.34.22%20PM.jpeg',
+        description: 'Mobile van advertising campaign on the move'
+      },
+
+      /* ---------- LED BOARDS ---------- */
+      {
+        id: 11,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
         image: 'led-2.jpg',
         description: 'Large-format LED display screen installation'
       },
-           {
-        id: 8,
+      {
+        id: 12,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
-        image: 'WhatsApp Image 2026-09-18 at 12.30.19 PM.jpeg',
+        image: 'WhatsApp%20Image%202026-09-18%20at%2012.30.19%20PM.jpeg',
         description: 'Large-format LED display screen installation'
       },
       {
-        id: 8,
+        id: 13,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
@@ -1514,7 +1514,7 @@
         description: 'Large-format LED display screen installation'
       },
       {
-        id: 8,
+        id: 14,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
@@ -1522,24 +1522,25 @@
         description: 'Large-format LED display screen installation'
       },
       {
-        id: 8,
+        id: 15,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
         image: 'led-5.jpg',
         description: 'Large-format LED display screen installation'
       },
-   
       {
-        id: 8,
+        id: 16,
         title: 'LED Display Screen',
         category: 'led',
         categoryLabel: 'LED Board',
         image: 'led-6.jpg',
         description: 'Large-format LED display screen installation'
       },
+
+      /* ---------- SIGN BOARDS ---------- */
       {
-        id: 4,
+        id: 17,
         title: 'Custom Sign Board Design',
         category: 'sign',
         categoryLabel: 'Sign Board',
@@ -1547,7 +1548,17 @@
         description: 'Custom-designed sign board for brand identity'
       },
       {
-        id: 5,
+        id: 18,
+        title: 'Exterior Signage Solution',
+        category: 'sign',
+        categoryLabel: 'Sign Board',
+        image: 'led-7.jpg',
+        description: 'Bold exterior signage for brand visibility'
+      },
+
+      /* ---------- CUSTOM STRUCTURES ---------- */
+      {
+        id: 19,
         title: 'ACP Cladding Project',
         category: 'custom',
         categoryLabel: 'Custom Structure',
@@ -1555,7 +1566,7 @@
         description: 'Premium ACP cladding for commercial building'
       },
       {
-        id: 5,
+        id: 20,
         title: 'ACP Cladding Project',
         category: 'custom',
         categoryLabel: 'Custom Structure',
@@ -1563,7 +1574,7 @@
         description: 'Premium ACP cladding for commercial building'
       },
       {
-        id: 5,
+        id: 21,
         title: 'ACP Cladding Project',
         category: 'custom',
         categoryLabel: 'Custom Structure',
@@ -1571,7 +1582,7 @@
         description: 'Premium ACP cladding for commercial building'
       },
       {
-        id: 5,
+        id: 22,
         title: 'ACP Cladding Project',
         category: 'custom',
         categoryLabel: 'Custom Structure',
@@ -1579,57 +1590,45 @@
         description: 'Premium ACP cladding for commercial building'
       },
       {
-        id: 5,
+        id: 23,
         title: 'ACP Cladding Project',
         category: 'custom',
         categoryLabel: 'Custom Structure',
         image: 'costom-5.JPG',
         description: 'Premium ACP cladding for commercial building'
       },
+
+      /* ---------- FLEX BOARDS ---------- */
       {
-        id: 6,
+        id: 24,
         title: 'Flex Board Printing',
         category: 'flex',
         categoryLabel: 'Flex Board',
         image: 'flex-1.JPG',
         description: 'High-quality flex printing for outdoor campaign'
       },
-     
+
+      /* ---------- BACKLIGHT BOARDS ---------- */
       {
-        id: 10,
-        title: 'backlight Menu Boards',
+        id: 25,
+        title: 'Backlight Menu Boards',
         category: 'backlight',
-        categoryLabel: 'backlight Board',
+        categoryLabel: 'Backlight Board',
         image: 'Backlit-1.jpg',
         description: 'Elegant backlight menu boards for restaurant'
       },
       {
-        id: 10,
-        title: 'backlight Menu Boards',
+        id: 26,
+        title: 'Backlight Menu Boards',
         category: 'backlight',
-        categoryLabel: 'backlight Board',
+        categoryLabel: 'Backlight Board',
         image: 'Backlit-2.JPG',
         description: 'Elegant backlight menu boards for restaurant'
       },
+
+      /* ---------- PROMOTIONAL ROLL UP STANDEE ---------- */
       {
-        id: 11,
-        title: 'Exterior Signage Solution',
-        category: 'sign',
-        categoryLabel: 'Sign Board',
-        image: 'led-7.jpg',
-        description: 'Bold exterior signage for brand visibility'
-      },
-      {
-        id: 11,
-        title: 'Exterior Signage Solution',
-        category: 'sign',
-        categoryLabel: 'Sign Board',
-        image: 'led-2.jpg',
-        description: 'Bold exterior signage for brand visibility'
-      },
-      // NEW: Promotional Roll Up Standee category item
-      {
-        id: 12,
+        id: 27,
         title: 'Promotional Roll Up Standee',
         category: 'standee',
         categoryLabel: 'Roll Up Standee',
@@ -1728,7 +1727,6 @@
       const caption = document.getElementById('lightboxCaption');
       const item = currentImages[index];
 
-      // Exact image path preserved
       img.src = item.image;
       img.alt = item.title;
       caption.textContent = `${item.title} - ${item.description}`;
@@ -1781,13 +1779,11 @@
 
       // Click OUTSIDE the exact image -> close.
       lightbox.addEventListener('click', function(e) {
-        // If user clicked directly on the image (or its content wrapper), do nothing
         if (e.target.closest('#lightboxImg')) return;
         if (e.target.closest('#lightboxContent') && e.target.tagName === 'IMG') return;
         if (e.target.closest('#lightboxClose')) return;
         if (e.target.closest('#lightboxPrev')) return;
         if (e.target.closest('#lightboxNext')) return;
-        // Clicking on backdrop / caption / empty area closes
         if (e.target === lightbox || e.target === content || e.target.closest('#lightboxCaption')) {
           closeLightbox();
         }
